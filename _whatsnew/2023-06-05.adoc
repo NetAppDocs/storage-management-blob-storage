@@ -1,0 +1,6 @@
+:icons: font
+:imagesdir: ../media/
+
+=== Ability to add new storage accounts from BlueXP
+
+You have had the ability to view Azure Blob Storage on the BlueXP Canvas for quite a while. Now you can add new storage accounts and change properties for existing storage accounts directly from BlueXP. xref:../task-add-blob-storage.html[Learn how to add new Azure Blob storage accounts].
