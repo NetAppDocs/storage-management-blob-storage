@@ -44,15 +44,15 @@ https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage
 
 |===
 
-Click *Save* to save the changes to the storage account.
+Select *Save* to save the changes to the storage account.
 
 == Add or change tags for objects in the storage account
 
-In the _Tags_ section you can add up to 10 tag key/value pairs, or you can change or delete a tag key/value pair. Tags are applied to objects when they are added to the storage account. If you want to add more tags, click *Add new tag*.
+In the _Tags_ section you can add up to 10 tag key/value pairs, or you can change or delete a tag key/value pair. Tags are applied to objects when they are added to the storage account. If you want to add more tags, select *Add new tag*.
 
 https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs[Learn more about tagging from the Microsoft documentation^].
 
-Click *Save* to save the changes to the storage account.
+Select *Save* to save the changes to the storage account.
 
 == Change the encryption setting
 
@@ -73,4 +73,4 @@ The keys can be in the same Subscription as the storage account, or you can sele
 
 See the Microsoft Azure documentation for https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption[more information about Microsoft-managed keys^], and https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview[more information about Customer-managed keys^].
 
-Click *Save* to save the changes to the storage account.
+Select *Save* to save the changes to the storage account.

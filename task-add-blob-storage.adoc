@@ -88,4 +88,4 @@ The keys can be in the same Subscription as the storage account, or you can sele
 +
 See the Microsoft Azure documentation for https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption[more information about Microsoft-managed keys^], and https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview[more information about Customer-managed keys^].
 
-. Click *Add* and the bucket is created.
+. Select *Add* to create the bucket.
