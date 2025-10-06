@@ -1,14 +1,30 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: Azure Blob storage documentation
+  lead: Get started using Azure Blob storage with the NetApp Console.
+  summary: Get started using Azure Blob storage with the NetApp Console.
+  keywords: bluexp, documentation, storage, storage management, azure blob, netapp console
+  tiles:
+    - title: Get started
+      links:
+        - title: View your Azure Blob storage accounts
+          url: task-view-azure-blob-storage.html
+    - title: Manage Azure Blob storage accounts
+      links:
+        - title: Add Blob storage accounts
+          url: task-add-blob-storage.html
+        - title: Change storage account settings
+          url: task-change-blob-storage-settings.html
+        - title: Use NetApp data services with Azure Blob storage
+          url: task-blob-enable-data-services.html
+    - title: More information
+      links:
+        - title: Azure Blob storage documentation for management outside of the Console
+          url: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
+    - title: Blogs & community
+      links:
+       - title: NetApp Console
+         url: https://www.netapp.com/console
+       - title: NetApp Data Services
+         url: https://www.netapp.com/data-services/
+       - title: NetApp Community 
+         url: https://community.netapp.com/

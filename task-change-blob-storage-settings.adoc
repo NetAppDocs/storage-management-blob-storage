@@ -1,0 +1,76 @@
+---
+sidebar: sidebar
+permalink: task-change-blob-storage-settings.html
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment, system
+summary: Once your Azure Blob Storage system is available in the Systems page, you can change some storage account properties directly from the NetApp Console.
+---
+
+= Change Azure Blob storage account settings in the NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Once your Azure Blob Storage system is available in the Systems page, you can change some storage account properties directly from the NetApp Console.
+
+Note that you can't change the storage account name, Azure region, or the performance type of the storage.
+
+The storage account properties you can change includes:
+
+* The Subscription and Resource Group for the storage account.
+* Add, change, or remove tags for the objects that are added to the storage account.
+* Whether or not new objects added to the storage account are encrypted, and the option used for encryption.
+
+You can change these storage account settings directly from the Connsole by selecting image:button-horizontal-more.gif[the three dots more button] for a storage account.
+
+image:screenshot-edit-azure-blob-storage.png[A screenshot showing how to edit storage account properties from the Console.]
+
+== Change the Project details
+
+In the _Project details_ section you can change the Subscription and the Resource group for the storage account.
+
+[cols=2*,options="header",cols="25,75"]
+|===
+| Field
+| Description
+
+| Subscription | Select a different Azure subscription for the storage account.
+
+| Resource group a| Select a different resource group for the storage account. 
+
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal[Learn more about resource groups^].
+
+|===
+
+Select *Save* to save the changes to the storage account.
+
+== Add or change tags for objects in the storage account
+
+In the _Tags_ section you can add up to 10 tag key/value pairs, or you can change or delete a tag key/value pair. Tags are applied to objects when they are added to the storage account. If you want to add more tags, select *Add new tag*.
+
+https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs[Learn more about tagging from the Microsoft documentation^].
+
+Select *Save* to save the changes to the storage account.
+
+== Change the encryption setting
+
+In the _Encryption_ section, you can change the type of data encryption you want to use to protect access to the data in your storage accounts.
+
+[cols=2*,options="header",cols="25,75"]
+|===
+| Data encryption type
+| Description
+
+| Microsoft-managed keys | By default, Microsoft-managed encryption keys are used to used to encrypt your data. 
+
+| Customer-managed keys a| You can use your own customer-managed keys for data encryption instead of using the default Microsoft-managed encryption keys. If you're planning to use your own customer-managed keys, you'll need to have created them already so you can select the Key Vault and the Keys in this page.
+
+The keys can be in the same Subscription as the storage account, or you can select a different Subscription.
+
+|===
+
+See the Microsoft Azure documentation for https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption[more information about Microsoft-managed keys^], and https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview[more information about Customer-managed keys^].
+
+Select *Save* to save the changes to the storage account.

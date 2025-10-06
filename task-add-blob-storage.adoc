@@ -1,0 +1,91 @@
+---
+sidebar: sidebar
+permalink: task-add-blob-storage.html
+keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment, add storage accounts, netapp console, system
+summary: Once your Azure Blob Storage system is available in the NetApp Console systems page, you can add additional storage accounts directly from the Console.
+---
+= Add Azure Blob storage accounts in the NetApp Console
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Once your Azure Blob Storage system is available in the NetApp Console systems page, you can add additional storage accounts directly from the Console.
+
+.Steps
+
+. From the Systems page, select the Azure Blob Storage system to view its overview page.
+. Select *Add storage account*.
++
+image:screenshot-add-blob-storage-button.png[A screenshot that shows the details of an Azure Blob Storage system and the Add storage account button.]
++
+The _Add storage account_ page is displayed.
++
+image:screenshot-add-blob-storage.png[A screenshot showing the Add storage account page so you can create your own Azure Blob storage accounts.]
+
+. Enter the required information in the _Project details_ section.
++
+[cols=2*,options="header",cols="25,75"]
+|===
+| Field
+| Description
+
+| Subscription | Select the Azure subscription for the new storage account.
+
+| Resource group a| Select an existing resource group for this storage account.
+
+https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal[Learn more about resource groups^].
+
+|===
+
+. In the _Instance details_ section, enter the name for the storage account, and select a region (or regions) for the storage account to be created in.
++
+[cols=2*,options="header",cols="25,75"]
+|===
+| Field
+| Description
+
+| Storage account name | Enter the name you want to use for the storage account. The name must be between 3 and 24 characters in length, and it can contain numbers and lowercase letters only.
+
+| Azure Region a| Select a region from the list where the storage account will be created.
+
+Select the appropriate region for your storage account. https://learn.microsoft.com/en-us/azure/availability-zones/az-overview[See the Microsoft documentation for information about Azure regions and availability zones^].
+
+Not all regions are supported for all types of storage accounts or redundancy configurations. https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy[See the Microsoft documentation for information about Azure Storage redundancy^].
+
+Additionally, the choice of region can have a billing impact. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#storage-account-billing[See the Microsoft documentation for information about Azure Storage account billing^].
+
+| Performance type a| Select whether you want to use *Standard* or *Premium* performance storage. https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#types-of-storage-accounts[See the Microsoft documentation for information about Types of storage accounts^].
+
+* _Standard_ performance is used for general-purpose v2 storage accounts. This type of account is recommended for most scenarios. 
+
+* _Premium_ performance is used for scenarios that require low latency. There are three types of premium storage accounts are available: Block blobs, File shares, and Page blobs. 
+
+|===
+
+. In the _Tags_ section, you can enter up to 10 tag key/value pairs to group your resources. 
++
+Tags are metadata that you can use to group resources to identify applications, environments, regions, cloud providers, and more. You can add tags to a storage account so that the tags are applied to objects when they are added to the storage account.
++
+Tags are disabled by default in new storage accounts created by the Console. https://learn.microsoft.com/en-us/azure/storage/blobs/storage-manage-find-blobs[Learn more about tagging^].
+
+. In the _Encryption_ section, choose the type of data encryption you want to use to protect access to the data in the storage account.
++
+[cols=2*,options="header",cols="25,75"]
+|===
+| Data encryption type
+| Description
+
+| Microsoft-managed keys | By default, Microsoft-managed encryption keys are used to encrypt your data. 
+
+| Customer-managed keys a| You can use your own customer-managed keys for data encryption instead of using the default Microsoft-managed encryption keys. If you're planning to use your own customer-managed keys, you'll need to have created them already so you can select the Key Vault and the Keys in this page.
+
+The keys can be in the same Subscription as the storage account, or you can select a different Subscription. 
+
+|===
++
+See the Microsoft Azure documentation for https://learn.microsoft.com/en-us/azure/storage/common/storage-service-encryption[more information about Microsoft-managed keys^], and https://learn.microsoft.com/en-us/azure/storage/common/customer-managed-keys-overview[more information about Customer-managed keys^].
+
+. Select *Add* to create the bucket.
