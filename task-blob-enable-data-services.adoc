@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-blob-enable-data-services.html
 keywords: blob storage, blob working environment, azure blob storage accounts, azure blob working environment, system
-summary: After you discover Azure Blob storage accounts in BlueXP, you can use NetApp data services for backup, tiering, and data synchronization.
+summary: After you discover Azure Blob storage accounts in the NetApp Console, you can use NetApp data services for backup, tiering, and data synchronization.
 ---
 
 = Use NetApp data services with Azure Blob storage
@@ -19,13 +19,13 @@ After you discover Azure Blob storage accounts in the NetApp Console, you can us
 +
 To get started, navigate to the Systems page. Drag and drop an on-premises ONTAP or Cloud Volumes ONTAP system on your Azure Blob Storage system.
 +
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html[Learn more about backing up ONTAP data to Azure Blob storage^].
+https://docs.netapp.com/us-en/data-services-backup-recovery/concept-ontap-backup-to-cloud.html[Learn more about backing up ONTAP data to Azure Blob storage^].
 
 * Use *NetApp Cloud Tiering* to tier inactive data from on-premises ONTAP clusters to Azure Blob storage.
 +
 To get started, navigate to the Systems page. Drag and drop an on-premises ONTAP system on your Azure Blob Storage system.
 +
-https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-azure.html[Learn more about tiering ONTAP data to Azure Blob storage^].
+https://docs.netapp.com/us-en/data-services-tiering/task-tiering-onprem-azure.html[Learn more about tiering ONTAP data to Azure Blob storage^].
 
 * Use *NetApp Copy and Sync* to synchronize data to or from Azure Blob storage accounts.
 +
@@ -33,4 +33,4 @@ To get started, navigate to the Systems page. Drag and drop the source system on
 +
 You can also select your Azure Blob Storage system then *Copy & Sync* from the Services panel to synchronize data to or from Azure Blob storage accounts.
 +
-https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html[Learn more about Copy and Sync^].
+https://docs.netapp.com/us-en/data-services-copy-sync/concept-cloud-sync.html[Learn more about Copy and Sync^].
